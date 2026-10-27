@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- 1. Reset CSS : 브라우저 기본 스타일 초기화 -->
+    <link rel="stylesheet" href="./style/reset.css" />
+    <!-- 2. Main CSS : 우리가 작성한 디자인 적용 -->
+    <link rel="stylesheet" href="./style/style.css" />
+    <!-- 3. jQuery Library : jQuery CDN 연결-->
+    <script
+      src="https://code.jquery.com/jquery-4.0.0.min.js"
+      integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao="
+      crossorigin="anonymous"
+    ></script>
+    <!-- 4. My JavaScript : 우리가 작성한 스크립트 코드 연결 -->
+    <script src="./js/script.js" defer></script>
+
+    <!-- 일본어 웹폰트 -->
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet" />
+
+    <!-- 한국어 웹폰트 -->
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet" />
+
+    <!-- 영어 웹폰트 -->
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="poster">
+      <!-- 1. 배경 -->
+      <div class="poster-scene">
+        <div class="background"></div>
+        <div class="background-dark"></div>
+        <div class="background-red"></div>
+
+        <!-- 2. 왼쪽 포스터 정보 -->
+        <div class="left-content">
+          <!-- 페이드인 문구 -->
+          <div class="main-copy">
+            <div class="copy-first">어느 날,</div>
+
+            <div class="copy-second">단짝 친구가 '무언가로' 뒤바뀌어 있었다.</div>
+          </div>
+
+          <!-- 기본 제목 -->
+          <img
+            class="title title-normal"
+            src="./assets/히카루가 죽은 여름_하양제목누끼2.png"
+            alt="히카루가 죽은 여름"
+          />
+
+          <!-- 글리치 제목 -->
+          <img class="title title-question" src="./assets/히카루가 죽은 여름_하양제목누끼2.물음표.png" alt="" />
+
+          <!-- 개봉 날짜와 NETFLIX -->
+          <div class="release">
+            <div class="date">2025.07.26</div>
+
+            <div class="release-line"></div>
+
+            <div class="netflix-wrap">
+              <img class="netflix" src="./assets/넷플릭스 로고.png" alt="Netflix" />
+            </div>
+          </div>
+
+          <!-- 제작 정보 -->
+          <div class="credits">
+            <p class="original">原作：モクモクれん (Mokumokuren)</p>
+
+            <p class="production">Animated by 株式会社サイエンスSARU / Produced by KADOKAWA</p>
+
+            <p class="cast-title">CAST</p>
+
+            <p class="cast">Yoshiki CV. 小林千晃 &emsp;/&emsp; Hikaru CV. 梅田修一朗</p>
+          </div>
+        </div>
+
+        <!-- 3. 캐릭터 이미지 -->
+
+        <!-- 기본 히카루 -->
+        <img class="hikaru" src="./assets/히카루가 죽은 여름_히카루.정상.png" alt="히카루" />
+
+        <!-- 괴물 히카루 -->
+        <img class="hikaru-monster" src="./assets/히카루가 죽은 여름_히카루.일그러진.png" alt="" />
+
+        <!-- 기본 요시키 -->
+        <img class="yoshiki" src="./assets/히카루가 죽은 여름_요시키누끼.등X.png" alt="요시키" />
+
+        <!-- 문양이 있는 요시키 -->
+        <img class="yoshiki-change" src="./assets/히카루가 죽은 여름_요시키누끼.등O.png" alt="" />
+
+        <!-- 4. 오른쪽 텍스트 -->
+
+        <!-- 오른쪽 상단 -->
+        <div class="right-title">히카루가 죽은 여름</div>
+
+        <!-- 오른쪽 하단 -->
+        <div class="right-copy">
+          <div class="right-first">光ちゃんやろ。</div>
+          <div class="right-second">お前。</div>
+        </div>
+      </div>
+
+      <!-- 5. 마우스 감지 영역 -->
+
+      <!-- 히카루 Hover / Hold -->
+      <div class="hikaru-hover"></div>
+
+      <!-- 요시키 Hover / Hold -->
+      <div class="yoshiki-hover"></div>
+
+      <!-- 제목 光 Hover -->
+      <div class="title-hikaru-hover"></div>
+
+      <!-- 6. 히카루 프로필 -->
+      <div class="hikaru-profile">
+        <!-- 연결 원과 선 -->
+        <div class="profile-dot"></div>
+        <div class="profile-line"></div>
+        <div class="profile-end-dot"></div>
+
+        <div class="profile-card hikaru-card">
+          <!-- 일반 히카루 -->
+          <div class="hikaru-normal-content">
+            <div class="profile-heading">
+              <div class="profile-number">01</div>
+              <div class="profile-name">忌堂 光</div>
+            </div>
+
+            <div class="profile-divider"></div>
+
+            <img class="profile-photo" src="./assets/히카루 프로필 사진.jpg" alt="히카루 프로필" />
+
+            <div class="profile-info">
+              <p>이름 : 인도우 히카루</p>
+              <p>나이 : 17세</p>
+              <p>고등학교 : 希望ヶ山高校</p>
+              <p>생일 : 3월 20일</p>
+              <p>키 : 165cm</p>
+              <p>동아리 : 축구부</p>
+            </div>
+
+            <p class="profile-description">
+              요시키와 어린 시절부터 함께 자란 소꿉친구로, 늘 유쾌하고 웃음이 많지만 누구보다 친구를 진심으로 아끼는
+              다정한 면모를 지녔다.
+            </p>
+          </div>
+
+          <!-- Hold 시 괴물 히카루 -->
+          <div class="hikaru-monster-content">
+            <div class="profile-heading monster-heading">
+              <div class="profile-number">03</div>
+              <div class="profile-name">?????????????????????</div>
+            </div>
+
+            <div class="profile-divider"></div>
+
+            <img class="profile-photo" src="./assets/히카루 프로필 사진2.jpg" alt="변형된 히카루 프로필" />
+
+            <div class="profile-info">
+              <p>이름 : 인#@ 히카■ / !*^!!@</p>
+              <p>나이 : 17■</p>
+              <p>고등학교 : 希望ヶ山高■</p>
+              <p>생일 : 3월 2■일</p>
+              <p>키 : 16?cm</p>
+              <p>동아리 : 축구부</p>
+            </div>
+
+            <p class="profile-description">
+              분명 히카루의 얼굴과 목소리를 하고 있다.<br />
+              하지만 그 안에 존재하는 것은<br />
+              우리가 알고 있던 히카루가 아니다.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7. 요시키 프로필 -->
+      <div class="yoshiki-profile">
+        <!-- 연결 원과 선 -->
+        <div class="yoshiki-dot"></div>
+        <div class="yoshiki-line"></div>
+        <div class="yoshiki-end-dot"></div>
+
+        <div class="profile-card yoshiki-card">
+          <!-- 일반 요시키 -->
+          <div class="yoshiki-normal-content">
+            <div class="profile-heading">
+              <div class="profile-number">02</div>
+              <div class="profile-name">辻中 佳紀</div>
+            </div>
+
+            <div class="profile-divider"></div>
+
+            <img class="profile-photo" src="./assets/요시키 프로필 사진.jpg" alt="요시키 프로필" />
+
+            <div class="profile-info">
+              <p>이름 : 츠지나카 요시키</p>
+              <p>나이 : 17세</p>
+              <p>고등학교 : 希望ヶ山高校</p>
+              <p>생일 : 4월 20일</p>
+              <p>키 : 175cm</p>
+              <p>동아리 : X</p>
+            </div>
+
+            <p class="profile-description">
+              히카루와 어린 시절부터 함께 자란 소꿉친구로, 감정 표현에는 서툴지만 소중한 사람을 쉽게 놓지 못하는 섬세한
+              면모를 지녔다.
+            </p>
+          </div>
+
+          <!-- Hold 시 요시키 프로필 2 -->
+          <div class="yoshiki-hold-content">
+            <div class="profile-heading">
+              <div class="profile-number">02</div>
+              <div class="profile-name">辻中 佳紀</div>
+            </div>
+
+            <div class="profile-divider"></div>
+
+            <img class="profile-photo" src="./assets/요시키 프로필 사진2.jpg" alt="놀란 요시키 프로필" />
+
+            <!-- 신상 정보 대신 스토리 표시 -->
+            <div class="yoshiki-story">
+              <p>히카루는 이제 없는 거야… 그렇다면──.</p>
+
+              <p>
+                히카루가 실종에서 돌아온 어느 날, 히카루인 줄 알았던 것이 다른 무언가로 바뀌어 있음을 요시키는 확신한다.
+              </p>
+
+              <p>그렇더라도, 함께 있고 싶어.</p>
+
+              <p>친구의 모습을 한 무언가와 보내는, 평소와 다름 없는 나날이 시작된다.</p>
+
+              <p>동시에 마을에서는 기괴한 사건이 일어나기 시작하는데──.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8. 제목 글리치 -->
+      <div class="glitch-noise"></div>
+      <div class="glitch-flash"></div>
+    </div>
+  </body>
+</html>
