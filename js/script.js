@@ -70,7 +70,7 @@ $(document).ready(function () {
       $(".hikaru-profile").stop(true, true).fadeOut(200);
 
       // 문양이 있는 요시키 이미지
-      $(".yoshiki-change").attr("src", "./assets/히카루가 죽은 여름_요시키누끼.등O(1).png");
+      $(".yoshiki-change").attr("src", "./assets/히카루가 죽은 여름_요시키누끼.등O.png");
 
       $(".poster").addClass("show-yoshiki-hold");
       $(".yoshiki-profile").stop(true, true).fadeIn(300);
@@ -87,7 +87,7 @@ $(document).ready(function () {
       $(".poster").removeClass("show-hikaru-monster");
 
       // 요시키 이미지 복원
-      $(".yoshiki-change").attr("src", "./assets/히카루가 죽은 여름_요시키누끼.등O(1).png");
+      $(".yoshiki-change").attr("src", "./assets/히카루가 죽은 여름_요시키누끼.등O.png");
 
       if (!hikaruOver) {
         $(".hikaru-profile").stop(true, true).fadeOut(300);
